@@ -19,7 +19,7 @@
 3. Update the following [default linter's configurations] in [.github/linters] folder or remove them to always use the default configuration.
 
 - Customize [.markdown-lint.yml] for markdown linter. See [MarkdownLint Configuration] for more detail.
-- Customize [.hadolint.yaml] for dockerfile linter. See [Haskell Dockerfile Linter] for more detail.
+- Customize [.hadolint.yaml] for dockerfile linter. See [Haskell Dockerfile Linter Configuration] for more detail.
 - Customize [.dockerfilelintrc] for dockerfile linter. See [DockerfileLint Configuration] for more detail.
 - Customize [.jscpd.json] for copy/paste detector check.
 
@@ -37,7 +37,7 @@
 [.github/linters]: <.github/linters>
 [.dockerfilelintrc]: <.github/linters/.dockerfilelintrc>
 [DockerfileLint Configuration]: <https://github.com/replicatedhq/dockerfilelint#configuring>
-[Haskell Dockerfile Linter]: <https://github.com/hadolint/hadolint#configure>
+[Haskell Dockerfile Linter Configuration]: <https://github.com/hadolint/hadolint#configure>
 [default linter's configurations]: <https://github.com/github/super-linter/tree/master/TEMPLATES>
 [Markdown Link Checker]: <https://github.com/tcort/markdown-link-check#config-file-format>
 [check-md-links.yml]: <.github/workflows/check-md-links.yml>
