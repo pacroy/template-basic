@@ -24,6 +24,7 @@
 - Customize [.jscpd.json] for copy/paste detector check.
 
 4. Remove [check-md-links.yml] if you don't need it. Otherwise, update [mlc_config.json] to exclude some private URLs.
+5. Update [README.md] accordingly. Don't forget to update the status badges to point to your repository.
 
 [Superlinter]: <https://github.com/github/super-linter>
 [linter.yml]: <.github/workflows/linter.yml>
@@ -41,3 +42,4 @@
 [Markdown Link Checker]: <https://github.com/tcort/markdown-link-check#config-file-format>
 [check-md-links.yml]: <.github/workflows/check-md-links.yml>
 [mlc_config.json]: <.github/link-checker/mlc_config.json>
+[README.md]: <README.md>
