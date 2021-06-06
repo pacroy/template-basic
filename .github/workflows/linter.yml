@@ -61,3 +61,6 @@ jobs:
 
           # OpenShift - Disable YAML schema validation for OpenShift objects
           VALIDATE_KUBERNETES_KUBEVAL: false
+
+          # Shell script - Exclude some rules globally e.g. "--exclude=SC2016,SC1004"
+          SHELLCHECK_OPTS: ""
