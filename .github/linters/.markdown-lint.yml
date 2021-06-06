@@ -7,6 +7,13 @@
 
 # Linter rules doc:
 # - https://github.com/DavidAnson/markdownlint
+#
+# Note:
+# To comment out a single error:
+#   <!-- markdownlint-disable -->
+#   any violations you want
+#   <!-- markdownlint-restore -->
+#
 
 ###############
 # Rules by id #
@@ -14,8 +21,8 @@
 MD004: false                  # Unordered list style
 MD007:
   indent: 2                   # Unordered list indentation
-MD013: false
-MD024: true
+MD013:
+  line_length: 400            # Line length 80 is far to short
 MD026:
   punctuation: ".,;:!。，；:"  # List of not allowed punctuation in headers
 MD029: false                  # Ordered list item prefix
