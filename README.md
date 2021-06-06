@@ -10,6 +10,5 @@
 
 ## Usage
 
-Click <kbd>Use this template</kbd> to create a new repository from this template.
-
-See [Creating a repository from a template - GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template) for more information.
+1. Click <kbd>Use this template</kbd> to create a new repository from this template. See [Creating a repository from a template - GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template) for more information.
+2. Update README.md to include the status badge from your repo.
