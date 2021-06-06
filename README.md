@@ -9,10 +9,11 @@
 
 ## Usage
 
-1. Click <kbd>Use this template</kbd> to [create a new repository from this template]. 
+1. Click <kbd>Use this template</kbd> to [create a new repository from this template].
 2. Review and update [linter.yml] or remove if you don't need it.
-  - [Create repository secret] `LINTER_VALIDATE_ALL_CODEBASE` and set to `true` if you want superlinter to always scan all code base. Otherwise, set to `false` to scan only those changed.
-  - Update or remove environment variables in `Lint Code Base` step as you wish. See comments for how to customize each variable group.
+
+- [Create repository secret] `LINTER_VALIDATE_ALL_CODEBASE` and set to `true` if you want superlinter to always scan all code base. Otherwise, set to `false` to scan only those changed.
+- Update or remove environment variables in `Lint Code Base` step as you wish. See comments for how to customize each variable group.
 
 [Superlinter]: <https://github.com/github/super-linter>
 [linter.yml]: <.github/workflows/linter.yml>
