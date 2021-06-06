@@ -52,3 +52,9 @@ jobs:
           VALIDATE_ALL_CODEBASE: ${{ secrets.LINTER_VALIDATE_ALL_CODEBASE }}
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+          # Python - Use only Pylint scan and disable all others
+          VALIDATE_PYTHON_BLACK: false
+          VALIDATE_PYTHON_FLAKE8: false
+          VALIDATE_PYTHON_ISORT: false
+          VALIDATE_PYTHON_MYPY: false
