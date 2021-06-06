@@ -2,13 +2,18 @@
 
 [![Lint Code Base](https://github.com/pacroy/template-basic/actions/workflows/linter.yml/badge.svg)](https://github.com/pacroy/template-basic/actions/workflows/linter.yml)
 
-## Templates Included
+## Features Included
 
-- [Superlinter](https://github.com/github/super-linter) workflow defined at ([`linter.yml`](.github/workflows/linter.yml)).
-  - Triggered when pushing to any branch or at PR to main branch
-  - Use secret variable `LINTER_VALIDATE_ALL_CODEBASE` to specify whether to validate all code base (`true` or `false`)
+- GitHub Actions Workflows
+  - [linter.yml] - [Superlinter] workflow.
 
 ## Usage
 
-1. Click <kbd>Use this template</kbd> to create a new repository from this template. See [Creating a repository from a template - GitHub Docs](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template) for more information.
-2. Update README.md to include the status badge from your repo.
+1. Click <kbd>Use this template</kbd> to [create a new repository from this template]. 
+2. Review and update [linter.yml] or remove if you don't need it.
+  - [Create repository secret] `LINTER_VALIDATE_ALL_CODEBASE` and set to `true` if you want superlinter to always scan all code base. Otherwise, set to `false` to scan only those changed.
+
+[Superlinter]: <https://github.com/github/super-linter>
+[linter.yml]: <.github/workflows/linter.yml>
+[create a new repository from this template]: <https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/creating-a-repository-from-a-template>
+[Create repository secret]: <https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository>
