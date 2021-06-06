@@ -53,14 +53,14 @@ jobs:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
-          # Python - Use only Pylint scan and disable all others
-          VALIDATE_PYTHON_BLACK: false
-          VALIDATE_PYTHON_FLAKE8: false
-          VALIDATE_PYTHON_ISORT: false
-          VALIDATE_PYTHON_MYPY: false
+          # Python - Uncomment below to use only Pylint and disable all others
+          # VALIDATE_PYTHON_BLACK: false
+          # VALIDATE_PYTHON_FLAKE8: false
+          # VALIDATE_PYTHON_ISORT: false
+          # VALIDATE_PYTHON_MYPY: false
 
-          # OpenShift - Disable YAML schema validation for OpenShift objects
-          VALIDATE_KUBERNETES_KUBEVAL: false
+          # OpenShift - Uncomment below to disable YAML schema validation when you have OpenShift YAML files
+          # VALIDATE_KUBERNETES_KUBEVAL: false
 
-          # Shell script - Exclude some rules globally e.g. "--exclude=SC2016,SC1004"
-          SHELLCHECK_OPTS: ""
+          # Shell script - Uncomment below to exclude some rules globally
+          # SHELLCHECK_OPTS: "--exclude=SC2016,SC1004"
