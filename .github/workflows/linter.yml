@@ -59,8 +59,8 @@ jobs:
           ## Uncomment this section to either exclude/include only files to scan
           ## Reference: https://github.com/github/super-linter#environment-variables
           ## ==================================================
-          # FILTER_REGEX_EXCLUDE: '(.*\.[mM][dD]|\.github/.*'
-          # FILTER_REGEX_INCLUDE: '(.*\.[mM][dD]|\.github/.*'
+          # FILTER_REGEX_EXCLUDE: '(.*\.[mM][dD]|\.github/.*)'
+          # FILTER_REGEX_INCLUDE: '(.*\.[mM][dD]|\.github/.*)'
           
           ## ==================================================
           ## Python
