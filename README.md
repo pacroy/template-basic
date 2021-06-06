@@ -41,5 +41,5 @@
 [default linter's configurations]: <https://github.com/github/super-linter/tree/master/TEMPLATES>
 [Markdown Link Checker]: <https://github.com/tcort/markdown-link-check#config-file-format>
 [check-md-links.yml]: <.github/workflows/check-md-links.yml>
-[mlc_config.json]: <.github/link-checker/mlc_config.json>
+[mlc_config.json]: <.github/md-link-checker/mlc_config.json>
 [README.md]: <README.md>
