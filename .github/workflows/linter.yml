@@ -52,6 +52,15 @@ jobs:
           VALIDATE_ALL_CODEBASE: ${{ secrets.LINTER_VALIDATE_ALL_CODEBASE }}
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+          ## ==================================================
+          ## Exclude/Include files
+          ## ==================================================
+          ## Uncomment this section to either exclude/include only files to scan
+          ## Reference: https://github.com/github/super-linter#environment-variables
+          ## ==================================================
+          # FILTER_REGEX_EXCLUDE: '(.*\.[mM][dD]|\.github/.*'
+          # FILTER_REGEX_INCLUDE: '(.*\.[mM][dD]|\.github/.*'
           
           ## ==================================================
           ## Python
