@@ -12,5 +12,5 @@ jobs:
     - uses: actions/checkout@master
     - uses: gaurav-nelson/github-action-markdown-link-check@v1
       with:
-        config-file: '.github/link-checker/mlc_config.json'
+        config-file: '.github/md-link-checker/mlc_config.json'
         base-branch: 'main'
