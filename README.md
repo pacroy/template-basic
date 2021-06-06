@@ -18,7 +18,8 @@
 3. Review and update linter's configurations in [.github/linters] folder
 
 - Customize [.markdown-lint.yml] for markdown linter. See [MarkdownLint Configuration] for more detail.
-- Customize [.hadolint.yaml] for dockerfile linter. See [Dockerfile Linter Configuration] for more detail.
+- Customize [.hadolint.yaml] for dockerfile linter.  See [Haskell Dockerfile Linter] for more detail.
+- Customize [.dockerfilelintrc] for dockerfile linter.  See [DockerfileLint Configuration] for more detail.
 - Customize [.jscpd.json] for duplicate code check.
 
 [Superlinter]: <https://github.com/github/super-linter>
@@ -28,7 +29,8 @@
 [.markdown-lint.yml]: <.github/linters/.markdown-lint.yml>
 [.hadolint.yaml]: <.github/linters/.hadolint.yaml>
 [MarkdownLint Configuration]: <https://github.com/igorshubovych/markdownlint-cli#configuration>
-[Dockerfile Linter Configuration]: <https://github.com/hadolint/hadolint#configure>
 [.jscpd.json]: <.github/linters/.jscpd.json>
-[super-linter/.jscpd.json]: <https://github.com/github/super-linter/blob/master/TEMPLATES/.jscpd.json>
 [.github/linters]: <.github/linters>
+[.dockerfilelintrc]: <.github/linters/.dockerfilelintrc>
+[DockerfileLint Configuration]: <https://github.com/replicatedhq/dockerfilelint#configuring>
+[Haskell Dockerfile Linter]: <https://github.com/hadolint/hadolint#configure>
