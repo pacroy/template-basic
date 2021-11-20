@@ -1,6 +1,6 @@
 # Basic Template
 
-[![Lint Code Base](https://github.com/pacroy/template-basic/actions/workflows/linter.yml/badge.svg)](https://github.com/pacroy/template-basic/actions/workflows/linter.yml) [![Check Markdown links](https://github.com/pacroy/template-basic/actions/workflows/check-md-links.yml/badge.svg)](https://github.com/pacroy/template-basic/actions/workflows/check-md-links.yml)
+[![Lint Code Base](https://github.com/pacroy/template-basic/actions/workflows/linter.yml/badge.svg)](https://github.com/pacroy/template-basic/actions/workflows/linter.yml) [![Check Markdown Links](https://github.com/pacroy/template-basic/actions/workflows/markdown-link-check.yml/badge.svg)](https://github.com/pacroy/template-basic/actions/workflows/markdown-link-check.yml)
 
 ## Features Included
 
