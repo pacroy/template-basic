@@ -23,7 +23,7 @@
 - Customize [.dockerfilelintrc] for dockerfile linter. See [DockerfileLint Configuration] for more detail.
 - Customize [.jscpd.json] for copy/paste detector check.
 
-4. Remove [check-md-links.yml] if you don't need it. Otherwise, update [mlc_config.json] to exclude some private URLs.
+4. Remove [markdown-link-check.yml] if you don't need it. Otherwise, update [mlc_config.json] to exclude some private URLs.
 5. Update [README.md] accordingly. Don't forget to update the status badges to point to your repository.
 
 [Superlinter]: <https://github.com/github/super-linter>
@@ -40,6 +40,6 @@
 [Haskell Dockerfile Linter Configuration]: <https://github.com/hadolint/hadolint#configure>
 [default linter's configurations]: <https://github.com/github/super-linter/tree/master/TEMPLATES>
 [Markdown Link Checker]: <https://github.com/tcort/markdown-link-check#config-file-format>
-[check-md-links.yml]: <.github/workflows/check-md-links.yml>
+[markdown-link-check.yml]: <.github/workflows/markdown-link-check.yml>
 [mlc_config.json]: <.github/markdown-link-check/mlc_config.json>
 [README.md]: <README.md>
