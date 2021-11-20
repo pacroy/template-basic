@@ -89,3 +89,11 @@ jobs:
           ## Reference: https://github.com/koalaman/shellcheck/wiki/Ignore
           ## ==================================================
           # SHELLCHECK_OPTS: "--exclude=SC2016,SC1004"
+
+          ## ==================================================
+          ## Natural Language
+          ## ==================================================
+          ## Uncomment this section to disable natural language validation (textlint)
+          ## Reference: https://github.com/github/super-linter#environment-variables
+          ## ==================================================
+          # VALIDATE_NATURAL_LANGUAGE: false

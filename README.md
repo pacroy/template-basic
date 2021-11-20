@@ -13,12 +13,12 @@
 1. Click <kbd>Use this template</kbd> to [create a new repository from this template].
 2. Update [linter.yml] or remove if you don't need it.
 
-- [Create repository secret] `LINTER_VALIDATE_ALL_CODEBASE` and set to `true` if you want superlinter to always scan all code base. Otherwise, set to `false` to scan only those changed.
+- [Create repository secret] `LINTER_VALIDATE_ALL_CODEBASE` and set to `true` if you want superlinter to always scan all codebase. Otherwise, set to `false` to scan only those changed.
 - Update or remove environment variables in `Lint Code Base` step as you wish. See comments for how to customize each of them.
 
 3. Update the following [default linter's configurations] in [.github/linters] folder or remove them to always use the default configuration.
 
-- Customize [.markdown-lint.yml] for markdown linter. See [MarkdownLint Configuration] for more detail.
+- Customize [.markdown-lint.yml] for Markdown linter. See [MarkdownLint Configuration] for more detail.
 - Customize [.hadolint.yaml] for dockerfile linter. See [Haskell Dockerfile Linter Configuration] for more detail.
 - Customize [.dockerfilelintrc] for dockerfile linter. See [DockerfileLint Configuration] for more detail.
 - Customize [.jscpd.json] for copy/paste detector check.
