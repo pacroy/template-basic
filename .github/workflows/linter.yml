@@ -17,6 +17,7 @@ name: Lint Code Base
 on:
   workflow_dispatch:
   push:
+    branches: [main]
   pull_request:
     branches: [main]
 
@@ -47,7 +48,7 @@ jobs:
       # Run Linter against code base #
       ################################
       - name: Lint Code Base
-        uses: github/super-linter@v3
+        uses: github/super-linter@v4
         env:
           VALIDATE_ALL_CODEBASE: ${{ secrets.LINTER_VALIDATE_ALL_CODEBASE }}
           DEFAULT_BRANCH: main
@@ -88,3 +89,11 @@ jobs:
           ## Reference: https://github.com/koalaman/shellcheck/wiki/Ignore
           ## ==================================================
           # SHELLCHECK_OPTS: "--exclude=SC2016,SC1004"
+
+          ## ==================================================
+          ## Natural Language
+          ## ==================================================
+          ## Uncomment this section to disable natural language validation (textlint)
+          ## Reference: https://github.com/github/super-linter#environment-variables
+          ## ==================================================
+          # VALIDATE_NATURAL_LANGUAGE: false
