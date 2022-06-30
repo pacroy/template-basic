@@ -1,0 +1,59 @@
+name: Sync Files
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+env:
+  SOURCE_REPO: pacroy/gh-common-workflows
+
+jobs:
+  sync:
+    name: Sync Files
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Target
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.SYNC_PAT }}
+          path: 'target'
+      - name: Checkout Source
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ env.SOURCE_REPO }}
+          token: ${{ secrets.SYNC_PAT }}
+          path: 'source'
+      - name: Print files and directories
+        shell: bash
+        run: tree -aI "\.git" "$(pwd)"
+      - name: Sync files
+        shell: bash
+        run: |
+          path=".github"
+          rsync --recursive --exclude="source/${path}/workflows/_*.yml" "source/${path}/" "target/${path}"
+
+          rm -f "source/${path}/workflows/markdown-link-check.yml"
+          rm -rf "source/${path}/markdown-link-check"
+          rm -rf "source/${path}/linters"
+      - name: Create Job Summary
+        shell: bash
+        run: |
+          {
+            cd target
+            synced_files="$(git status --porcelain)"
+
+            if [ -z "${synced_files}" ]; then
+              echo ":smile: No change detected. Everything is already in sync."
+            else
+              echo ":sunglasses: The following changes have been made:"
+              echo "\`\`\`console"
+              echo "${synced_files}"
+              echo "\`\`\`"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "[AUTO] Sync files"
+          repository: target
